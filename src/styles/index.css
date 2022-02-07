@@ -1,12 +1,70 @@
 
-/* 
+.mycubito{
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    background-color: red;
+}
 
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
+.appear {
+    animation: appear 0.2s ease-in forwards;
+}
+.appear2{
+    animation: appear2 0.2s ease-in forwards;
+}
+.appear3{
+    animation: appear3 0.2s ease-in forwards;
+}
 
-*/
+
+@keyframes appear {
+    from{
+        background-color: red;
+        transform: rotateZ(0deg);
+    }
+
+    to{
+        background-color: greenyellow;
+        transform: rotateZ(360deg);
+    }
+    
+}
+
+@keyframes appear2 {
+    from{
+        background-color: blue;
+        transform: rotateZ(0deg);
+    }
+
+    to{
+        background-color: violet;
+        transform: rotateZ(360deg);
+    }
+    
+}
+
+@keyframes appear3 {
+    from{
+        background-color: springgreen;
+        transform: rotateZ(0deg);
+    }
+
+    to{
+        background-color: brown;
+        transform: rotateZ(360deg);
+    }
+    
+}
+
+
+
+
+.cubitoContainer{
+    display: flex;
+    justify-content: center;
+    border: 2px solid green;
+    flex-wrap: wrap;
+}
+.head_container{
+    display: flex;
+}
